@@ -1,0 +1,39 @@
+/* Mobile design */
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  width: 100%;
+  font-weight: 200;
+}
+
+.subtitle {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.header-paragraph {
+    width: 100%;
+    letter-spacing: 1.5px;
+}
+
+/* Laptop design */
+@media (min-width: 700px) {
+
+  .header-paragraph {
+    width: 80%;
+    letter-spacing: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1000px) {
+  .header-paragraph {
+    width: 60%;
+  }
+}
+

@@ -1,0 +1,80 @@
+/* Mobile design */
+
+.card-wrapper {
+  padding: 2rem 1rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.card-wrapper:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0.2rem;   
+    position: absolute;
+    top: 0;
+    left: 0;
+} 
+
+.card-wrapper.color-cyan:before{
+    background-color: hsl(180, 62%, 55%);
+    transform: translateY(-50%);
+}
+
+.card-wrapper.color-red:before {
+    background-color:hsl(0, 78%, 62%);
+}
+
+.card-wrapper.color-orange:before {
+    background-color:hsl(34, 97%, 64%);
+}
+
+.card-wrapper.color-blue:before {
+    background-color:hsl(212, 86%, 64%);
+}
+
+.card {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card p {
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.card img {
+    display: block;
+    margin-left: auto;
+}
+
+/* Laptop design */
+
+@media (min-width: 700px) {
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .card-wrapper {
+        width: 40%;
+        height: 250px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .card-wrapper {
+        width: 30%;
+    }
+
+    .card-wrapper.color-cyan,
+    .card-wrapper.color-blue {
+        transform: translateY(50%);
+    }
+}

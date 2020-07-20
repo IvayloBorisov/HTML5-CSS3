@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Josefin Sans, sans-serif;
+}
+
+body {
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-size: cover;
+    /* background-position: center center;
+    background-repeat: no-repeat; */
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+

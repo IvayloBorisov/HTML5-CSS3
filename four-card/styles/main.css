@@ -1,4 +1,3 @@
-/* Mobile design */
 
 .card-wrapper {
   padding: 2rem 1rem;
@@ -51,30 +50,3 @@
     margin-left: auto;
 }
 
-/* Laptop design */
-
-@media (min-width: 700px) {
-
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-
-    }
-    .card-wrapper {
-        width: 40%;
-        height: 250px;
-    }
-}
-
-@media (min-width: 1000px) {
-    .card-wrapper {
-        width: 30%;
-    }
-
-    .card-wrapper.color-cyan,
-    .card-wrapper.color-blue {
-        transform: translateY(50%);
-    }
-}

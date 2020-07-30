@@ -1,0 +1,56 @@
+@media screen and (min-width: 600px) {
+    .logo { width: 35%; }
+}
+
+@media screen and (min-width: 768px) {
+    
+    body { background-image: url(./images/bg-desktop.svg); }
+
+    .wrapper { padding: 2rem; }
+
+    .logo {
+        margin-left: 1rem;
+        width: 25%;
+    }
+
+    .flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .left-section { width: 55%; }
+
+    .right-section {
+        width: 35%;
+        margin-left: 2rem;
+    }
+
+    .right-section p,
+    .right-section h1 {
+        text-align: left;
+    }
+
+    .btn {
+        font-size: 16px;
+        display: block;
+        margin-right: auto;
+    }
+
+    .icon-links {
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .logo {
+        width: 15%;
+        margin-left: 6.5rem;
+    }
+
+    .left-section { width: 45%; }
+
+    h1 { 
+        font-size: 36px;
+        font-weight: 600;
+    }  
+}

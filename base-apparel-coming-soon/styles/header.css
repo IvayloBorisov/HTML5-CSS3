@@ -1,0 +1,16 @@
+.header {
+    width: 100%;
+    padding: 1em 0;
+}
+
+header .logo {
+    padding-bottom: 2em;
+    margin-left: 2em;
+    width: 30%;
+}
+
+header .hero {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5em;
+}

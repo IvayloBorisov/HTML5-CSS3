@@ -1,0 +1,38 @@
+
+@media (min-width: 700px) {
+
+    .header-paragraph {
+      width: 80%;
+      letter-spacing: 0;
+      margin: 0 auto;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .card-wrapper {
+        width: 40%;
+        height: 250px;
+    }
+  }
+  
+  @media (min-width:1000px) {
+    .header-paragraph {
+      width: 60%;
+    }
+
+    .card-wrapper {
+        width: 30%;
+    }
+
+    .card-wrapper.color-cyan,
+    .card-wrapper.color-blue {
+        transform: translateY(50%);
+    }
+  }
+
+

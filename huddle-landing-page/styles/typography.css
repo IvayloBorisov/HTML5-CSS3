@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap');
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html { box-sizing: border-box; }
+
+body {
+    background-image: url(./images/bg-mobile.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Open Sans', sans-serif;
+    max-height: 100vh;
+
+}
+
+h1 { 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+li { list-style: none;  }
+
+a { text-decoration: none; }
+
+p { opacity: 0.7; }
+
+h1, p, a { color: #fff; }
+
+h1, p { margin-bottom: 1.5rem; }
+
+.wrapper {
+    width: 100%;
+    padding: 3rem;
+}
+
+.logo { width: 50%; }
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

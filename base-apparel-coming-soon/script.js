@@ -1,19 +1,19 @@
 const form = document.getElementById('form');
-const email = document.getElementById('email');
 
-form.addEventListener('submit', event => {
-    event.preventDefault();
+form.addEventListener('submit', e => {
 
-    const emailValue = email.value;
+    e.preventDefault();
     
-    if(!validateEmail(emailValue)) {
-      form.classList.add('error');
+    const email = form['email'].value;
+
+    if(!validateEmail(email)) {
+        form.classList.add('error');
     } else {
         form.classList.remove('error');
     }
 });
 
-function validateEmail(email) {     
+const validateEmail = email => {     
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
 }

@@ -3,25 +3,27 @@
 *, *:before, *:after {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: Josefin Sans, sans-serif;
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
-    background-image: url(../images/bg-pattern-desktop.svg);
-    background-size: cover;
-    /* background-position: center center;
-    background-repeat: no-repeat; */
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
 .wrapper {
+    padding: 1em 0;
+    height: 100vh;
+}
+
+.left-container {
     display: flex;
-    min-height: 100vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
